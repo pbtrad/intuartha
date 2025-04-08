@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Image from 'next/image';
+import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Intuartha develops advanced forecasting tools powered by machine
             learning and AI. Our solutions help businesses across sectors make
-            informed, data-driven decisions. While we’re rooted in the energy
+            informed, data-driven decisions. While we're rooted in the energy
             domain, our capabilities extend far beyond.
           </p>
         </section>
@@ -86,7 +87,7 @@ export default function Home() {
         <section id="coming-soon" className="py-20 px-4 bg-cyan-100 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Coming Soon</h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            We’re currently building out a powerful new feature: Balancing
+            We're currently building out a powerful new feature: Balancing
             Market Forecasting. Designed to help market participants anticipate
             imbalances and price signals, this tool will support better
             decision-making and greater grid stability.
@@ -96,14 +97,9 @@ export default function Home() {
         <section id="contact" className="py-20 px-4 bg-cyan-50 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
           <p className="text-lg text-gray-600 mb-6">
-            Interested in a demo or partnership? Let’s talk.
+            Interested in a demo or partnership? Let's talk.
           </p>
-          <a
-            href="mailto:hello@intuartha.com"
-            className="inline-block px-6 py-3 bg-cyan-600 text-white rounded-full hover:scale-105 transition"
-          >
-            Email Us
-          </a>
+          <ContactForm />
         </section>
       </main>
     </>
