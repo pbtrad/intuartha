@@ -36,7 +36,7 @@ export default function Navbar() {
           </Link>
         </div>
         <button
-          className="md:hidden"
+          className="md:hidden p-2 text-2xl hover:bg-gray-100 rounded-lg transition-colors"
           onClick={() => setOpen(!open)}
           aria-label="Toggle Menu"
         >
@@ -44,17 +44,33 @@ export default function Navbar() {
         </button>
       </div>
       {open && (
-        <div className="md:hidden bg-gradient-to-b from-cyan-600 via-cyan-500 to-cyan-400 px-4 pb-4 space-y-2 text-white">
-          <Link href="/" className="block">
+        <div className="md:hidden bg-gradient-to-b from-white via-cyan-50 to-cyan-100 shadow-lg px-6 py-4 space-y-4 absolute w-full z-50">
+          <Link 
+            href="/" 
+            className="block text-gray-700 hover:text-cyan-600 transition-colors py-2 text-lg"
+            onClick={() => setOpen(false)}
+          >
             Home
           </Link>
-          <Link href="#about" className="block">
+          <Link 
+            href="#about" 
+            className="block text-gray-700 hover:text-cyan-600 transition-colors py-2 text-lg"
+            onClick={() => setOpen(false)}
+          >
             About
           </Link>
-          <Link href="#services" className="hover:underline">
+          <Link 
+            href="#services" 
+            className="block text-gray-700 hover:text-cyan-600 transition-colors py-2 text-lg"
+            onClick={() => setOpen(false)}
+          >
             Services
           </Link>
-          <Link href="#contact" className="block">
+          <Link 
+            href="#contact" 
+            className="block text-gray-700 hover:text-cyan-600 transition-colors py-2 text-lg"
+            onClick={() => setOpen(false)}
+          >
             Contact
           </Link>
         </div>
